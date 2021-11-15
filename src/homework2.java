@@ -41,7 +41,7 @@ public class homework2 extends Thread {
 
                      try {
                          homework2.class.notify();
-                         homework2.class.wait();
+                         homework2.class.wait(10);
 
                      } catch (InterruptedException e) {
                          e.printStackTrace();
@@ -61,7 +61,7 @@ public class homework2 extends Thread {
 
                         try {
                             homework2.class.notify();
-                            homework2.class.wait();
+                            homework2.class.wait(10);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
